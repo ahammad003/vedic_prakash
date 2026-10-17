@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vedic Numerology Live Demo for ₹49 | Vedic Prakash</title>
+<meta name="description" content="Learn Mulank, Bhagyank, Lo Shu Grid and Dasha together in a 2–3 hour live online Vedic Numerology demo with Sanjeev Tiwari. Only ₹49.">
+<meta name="theme-color" content="#052e22">
+<meta property="og:title" content="Vedic Numerology Live Demo – Only ₹49">
+<meta property="og:description" content="Understand the timing of life's important moments. Live online demo with Vedic Prakash.">
+<meta property="og:image" content="img/logo.png">
+<link rel="icon" href="img/logo.png">
+<link rel="preload" as="image" href="img/logo.webp">
+<link rel="preload" as="image" href="img/author-hero.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@400;500;600;700;800&display=swap">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#04201a; --em900:#052e22; --em800:#0a4a36; --em700:#0f6b4a;
+  --green:#43b93e; --lime:#b6ec6a; --blue:#2e7bc0;
+  --gold:#f7c948; --saffron:#ff8a1f; --ruby:#e11d48; --teal:#14b8a6;
+  --cream:#fbf8ee; --paper:#f1f7ec; --text:#18352b; --muted:#53695f;
+  --display:'Cinzel','Trajan Pro',Georgia,serif;
+  --body:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --accent:'Playfair Display',Georgia,serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --gut:clamp(16px,4vw,32px);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);color:var(--text);background:var(--cream);line-height:1.6;overflow-x:hidden;font-size:16px;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding-inline:var(--gut)}
+.ico{width:1.4em;height:1.4em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+section{position:relative;padding-block:clamp(56px,8vw,96px);overflow:hidden}
+main{overflow-x:clip}
+
+/* ============ PRELOADER ============ */
+#pre{position:fixed;inset:0;z-index:999;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#fff 0%,#eef8e9 60%,#d9efd0 100%);transition:opacity .8s var(--ease),visibility .8s,transform .8s var(--ease)}
+#pre.done{opacity:0;visibility:hidden;transform:scale(1.06)}
+.pre-box{position:relative;width:min(78vw,420px);aspect-ratio:1;display:grid;place-items:center}
+.pre-box img{width:78%;height:auto;animation:preIn 1.2s var(--ease) both}
+.pre-ring{position:absolute;inset:0;border-radius:50%;border:2px dashed rgba(67,185,62,.55);animation:spin 14s linear infinite}
+.pre-ring.r2{inset:9%;border:2px solid rgba(46,123,192,.35);border-top-color:var(--blue);animation:spin 3s linear infinite reverse}
+.pre-bar{position:absolute;bottom:-34px;left:15%;right:15%;height:4px;border-radius:4px;background:rgba(5,46,34,.12);overflow:hidden}
+.pre-bar i{display:block;height:100%;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--green),var(--blue));animation:load 2s var(--ease) forwards}
+@keyframes preIn{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
+@keyframes load{to{transform:scaleX(1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ============ HEADER ============ */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s,transform .4s var(--ease)}
+header.solid{background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 6px 24px rgba(5,46,34,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.brand{display:flex;align-items:center;background:#fff;border-radius:14px;padding:4px 14px;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.brand img{height:46px;width:auto}
+
+/* ============ BUTTONS ============ */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;letter-spacing:.2px;overflow:hidden;isolation:isolate;transition:transform .35s var(--ease),box-shadow .35s;white-space:nowrap}
+.btn .ico{width:1.2em;height:1.2em;transition:transform .35s var(--ease)}
+.btn:hover .ico{transform:translateX(5px)}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:scale(.97)}
+.btn-enroll{color:#2a1300;background:linear-gradient(110deg,#ff8a1f 0%,#ffc531 55%,#ff8a1f 100%);background-size:200% 100%;box-shadow:0 10px 28px rgba(255,138,31,.45);animation:slide 4s linear infinite}
+.btn-enroll::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.65) 50%,transparent 65%);transform:translateX(-120%);animation:shine 3.2s ease-in-out infinite}
+.btn-enroll::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid #ffd76a;animation:ping 2.4s ease-out infinite;z-index:-1}
+.btn-sm{padding:10px 18px;font-size:.9rem}
+.btn-lg{padding:18px 32px;font-size:1.1rem;width:100%}
+@keyframes slide{to{background-position:-200% 0}}
+@keyframes shine{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.18,1.5);opacity:0}}
+
+/* ============ HERO ============ */
+.hero{padding-top:104px;padding-bottom:clamp(48px,7vw,84px);color:#fff;background:
+  radial-gradient(900px 560px at 85% 20%,rgba(67,185,62,.28),transparent 60%),
+  radial-gradient(700px 500px at 0% 90%,rgba(46,123,192,.22),transparent 60%),
+  linear-gradient(160deg,#04201a 0%,#073b2c 55%,#0a4a36 100%);overflow:hidden}
+.stars{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.stars i{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffe9a0;opacity:0;animation:twinkle var(--t,5s) ease-in-out infinite var(--dl,0s);box-shadow:0 0 8px 1px rgba(255,220,120,.8)}
+@keyframes twinkle{0%,100%{opacity:0;transform:translateY(0) scale(.6)}50%{opacity:.9;transform:translateY(-14px) scale(1.2)}}
+.hero-grid{position:relative;display:grid;gap:28px 48px;grid-template-areas:"copy" "visual" "info";align-items:center}
+.hero-copy{grid-area:copy}
+.hero-visual{grid-area:visual}
+.hero-info{grid-area:info}
+@media(min-width:960px){
+  .hero-grid{grid-template-columns:1.08fr .92fr;grid-template-areas:"copy visual" "info visual";align-items:start;align-content:center}
+  .hero-visual{align-self:center}
+}
+.live-badge{display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border-radius:999px;background:linear-gradient(90deg,#e11d48,#fb5a7a);font-size:.78rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;box-shadow:0 6px 22px rgba(225,29,72,.45)}
+.live-badge b{width:9px;height:9px;border-radius:50%;background:#fff;animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.25;transform:scale(.7)}}
+h1,h2,h3{font-family:var(--display);line-height:1.18;letter-spacing:.3px}
+h1{font-size:clamp(1.85rem,5.4vw,3.35rem);font-weight:800;margin:18px 0 16px}
+h1 em{font-style:normal;background:linear-gradient(100deg,#ffd76a,#ff9f1c,#ffe9a0,#ffd76a);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:slide 6s linear infinite}
+.lead{font-size:clamp(1rem,2.2vw,1.18rem);color:#d6efe2;max-width:56ch}
+.lead strong{color:var(--gold)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0 18px}
+.fact{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);min-width:0}
+.fact .ico{width:30px;height:30px;padding:6px;border-radius:10px;color:#04201a;background:var(--lime);box-sizing:content-box}
+.fact:nth-child(2) .ico{background:#ffd76a}.fact:nth-child(3) .ico{background:#7dd3fc}.fact:nth-child(4) .ico{background:#5eead4}
+.fact small{display:block;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;color:#a9d6c0}
+.fact span{display:block;font-weight:600;font-size:.92rem;line-height:1.3}
+/* timer */
+.timer-box{padding:16px;border-radius:20px;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.2));border:1px solid rgba(247,201,72,.4);margin-bottom:18px}
+.timer-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;font-size:.78rem;font-weight:600;letter-spacing:1.2px;text-transform:uppercase}
+.timer-top .l{color:#ffd76a}
+.timer-top .r{color:#fff;background:var(--ruby);padding:3px 12px;border-radius:999px;animation:pulseBg 1.8s infinite}
+@keyframes pulseBg{50%{background:#ff6b87}}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.timer div{padding:10px 4px;border-radius:14px;background:linear-gradient(180deg,#0f3b2d,#072219);border:1px solid rgba(255,255,255,.12);position:relative;overflow:hidden}
+.timer b{display:block;font-family:var(--body);font-weight:700;font-size:clamp(1.5rem,5.4vw,2.2rem);line-height:1.1;font-variant-numeric:tabular-nums;color:#ffd76a;text-shadow:0 0 18px rgba(255,200,60,.55)}
+.timer b.tick{animation:tick .45s var(--ease)}
+@keyframes tick{0%{transform:translateY(-35%);opacity:0}100%{transform:none;opacity:1}}
+.timer span{font-size:.68rem;letter-spacing:1.6px;text-transform:uppercase;color:#a9d6c0}
+/* price */
+.price-row{display:grid;gap:14px;align-items:center}
+.price{display:flex;align-items:center;justify-content:center;gap:14px;padding:12px 18px;border-radius:20px;background:linear-gradient(120deg,#fff3b0,#f7c948 60%,#f5a623);color:#2a1a00;box-shadow:0 12px 34px rgba(247,201,72,.4);position:relative;overflow:hidden}
+.price::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.7) 50%,transparent 65%);transform:translateX(-120%);animation:shine 4s ease-in-out infinite .6s}
+.price small{font-size:.72rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;line-height:1.3;text-align:left}
+.price strong{font-size:clamp(2.6rem,9vw,3.6rem);font-weight:800;line-height:1;letter-spacing:-1px;animation:beat 2.4s ease-in-out infinite}
+@keyframes beat{50%{transform:scale(1.07)}}
+/* visual */
+.stage{position:relative;width:min(100%,500px);margin:0 auto;aspect-ratio:.92}
+.glow{position:absolute;left:50%;top:44%;width:96%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(247,201,72,.35) 0%,rgba(67,185,62,.22) 45%,transparent 70%)}
+.chakra{position:absolute;left:50%;top:44%;width:112%;aspect-ratio:1;transform:translate(-50%,-50%)}
+.chakra svg{width:100%;height:100%;overflow:visible}
+.chakra .g{transform-box:fill-box;transform-origin:center;will-change:transform}
+.chakra .rays{animation:spin 120s linear infinite reverse}
+.chakra .ring{animation:spin 70s linear infinite}
+.chakra .core{animation:spin 45s linear infinite reverse}
+.paused .g,.paused .orb{animation-play-state:paused}
+.stage .person{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:100%;width:auto;max-width:none;-webkit-mask-image:linear-gradient(#000 82%,transparent 100%);mask-image:linear-gradient(#000 82%,transparent 100%);filter:drop-shadow(0 18px 30px rgba(0,0,0,.45));animation:floaty 7s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateX(-50%) translateY(-8px)}}
+.orb{position:absolute;width:var(--s,10px);height:var(--s,10px);border-radius:50%;background:radial-gradient(circle,#fff,#ffd76a 60%,transparent 70%);left:var(--x);top:var(--y);animation:orbit 6s ease-in-out infinite var(--dl,0s);opacity:.9}
+@keyframes orbit{50%{transform:translate(12px,-22px) scale(1.4);opacity:.4}}
+.name-tag{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);padding:8px 20px;border-radius:999px;background:rgba(5,46,34,.88);border:1px solid rgba(247,201,72,.6);backdrop-filter:blur(6px);text-align:center;white-space:nowrap;line-height:1.25}
+.name-tag b{display:block;font-family:var(--display);font-size:.95rem;color:#ffd76a}
+.name-tag span{font-size:.7rem;letter-spacing:1.4px;text-transform:uppercase;color:#cde9db}
+
+/* ============ SHARED SECTION BITS ============ */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--em700);margin-bottom:12px}
+.eyebrow::before,.eyebrow::after{content:"";width:26px;height:2px;background:linear-gradient(90deg,transparent,currentColor)}
+.eyebrow::after{transform:scaleX(-1)}
+.dark .eyebrow{color:var(--gold)}
+.sec-title{font-size:clamp(1.6rem,4.4vw,2.6rem);font-weight:800;color:var(--em900)}
+.dark .sec-title{color:#fff}
+.sec-title em{font-family:var(--accent);font-style:italic;font-weight:600;color:var(--green);letter-spacing:0}
+.dark .sec-title em{color:var(--gold)}
+.sec-sub{max-width:62ch;color:var(--muted);margin-top:12px}
+.dark .sec-sub{color:#bfe0d0}
+.center{text-align:center}.center .sec-sub{margin-inline:auto}
+.dark{background:linear-gradient(165deg,#04201a,#073b2c 60%,#0a4a36);color:#fff;overflow:hidden}
+.tint{background:linear-gradient(180deg,var(--paper),#e6f2de)}
+.note{display:flex;gap:12px;align-items:flex-start;padding:14px 18px;border-radius:16px;background:#fff;border:1px dashed rgba(15,107,74,.4);font-size:.9rem;color:var(--muted)}
+.note .ico{color:var(--blue);margin-top:2px}
+.dark .note{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.25);color:#cde9db}
+.card{padding:24px;border-radius:22px;background:#fff;border:1px solid rgba(15,107,74,.12);box-shadow:0 10px 30px rgba(5,46,34,.07);transition:transform .45s var(--ease),box-shadow .45s}
+.card:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(5,46,34,.16)}
+.icon-chip{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;margin-bottom:14px;color:#fff;background:linear-gradient(135deg,var(--green),var(--em700));box-shadow:0 8px 20px rgba(67,185,62,.4)}
+.icon-chip .ico{width:26px;height:26px}
+.c2 .icon-chip{background:linear-gradient(135deg,#ffb703,#ff7a00);box-shadow:0 8px 20px rgba(255,138,31,.4)}
+.c3 .icon-chip{background:linear-gradient(135deg,#3b9be0,#2e5fc0);box-shadow:0 8px 20px rgba(46,123,192,.4)}
+.c4 .icon-chip{background:linear-gradient(135deg,#fb5a7a,#be123c);box-shadow:0 8px 20px rgba(225,29,72,.35)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.mt{margin-top:clamp(28px,4vw,44px)}
+
+/* steps */
+.steps{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{position:relative;display:flex;gap:16px;align-items:center;padding:20px;border-radius:22px;background:#fff;border:1px solid rgba(15,107,74,.12);box-shadow:0 10px 30px rgba(5,46,34,.07)}
+.step .n{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;flex:none;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green),var(--em700));box-shadow:0 0 0 6px rgba(67,185,62,.18)}
+.step:nth-child(2) .n{background:linear-gradient(135deg,#ffb703,#ff7a00);box-shadow:0 0 0 6px rgba(255,138,31,.18)}
+.step:nth-child(3) .n{background:linear-gradient(135deg,#3b9be0,#2e5fc0);box-shadow:0 0 0 6px rgba(46,123,192,.18)}
+.step h3{font-size:1.02rem;font-family:var(--body);font-weight:700}
+.step p{font-size:.88rem;color:var(--muted);line-height:1.45}
+.step .ico{margin-left:auto;color:var(--em700);width:28px;height:28px}
+@media(min-width:860px){.step:not(:last-child)::after{content:"";position:absolute;right:-17px;top:50%;width:16px;height:2px;background:repeating-linear-gradient(90deg,var(--green) 0 4px,transparent 4px 8px)}}
+
+/* problem */
+.q{display:flex;gap:16px;align-items:center}
+.q .icon-chip{margin:0}
+.q h3{font-family:var(--body);font-size:1.05rem;font-weight:700;color:var(--em900)}
+.q p{font-family:var(--accent);font-style:italic;font-size:1.05rem;color:var(--muted);line-height:1.4}
+.punch{margin-top:26px;padding:22px;border-radius:22px;text-align:center;font-family:var(--display);font-weight:800;font-size:clamp(1.1rem,3.2vw,1.7rem);color:#fff;background:linear-gradient(110deg,var(--em800),var(--em700),var(--em800));background-size:200% 100%;animation:slide 9s linear infinite;box-shadow:0 14px 36px rgba(5,46,34,.28)}
+.punch span{color:var(--gold)}
+
+/* learn */
+.learn-grid{display:grid;gap:40px;align-items:center}
+@media(min-width:900px){.learn-grid{grid-template-columns:1.1fr .9fr}}
+.list{display:grid;gap:14px;margin-top:26px}
+.li{display:flex;gap:16px;align-items:flex-start;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);transition:transform .4s var(--ease),background .4s}
+.li:hover{transform:translateX(8px);background:rgba(255,255,255,.12)}
+.li .n{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;flex:none;font-weight:800;color:#2a1300;background:linear-gradient(135deg,#ffd76a,#ff9f1c)}
+.li h3{font-family:var(--body);font-size:1.02rem;font-weight:700}
+.li p{font-size:.9rem;color:#bfe0d0;line-height:1.5}
+.loshu-wrap{position:relative;width:min(100%,400px);margin:0 auto;aspect-ratio:1;display:grid;place-items:center}
+.loshu-wrap .chakra{width:122%;top:50%}
+.loshu{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:62%;aspect-ratio:1;padding:10px;border-radius:22px;background:rgba(4,32,26,.88);border:1px solid rgba(247,201,72,.55);box-shadow:0 0 50px rgba(247,201,72,.28)}
+.loshu b{display:grid;place-items:center;border-radius:14px;font-family:var(--display);font-size:clamp(1.4rem,5vw,2.2rem);color:#ffd76a;background:linear-gradient(160deg,#0f4a38,#072a20);border:1px solid rgba(255,255,255,.12);animation:glowCell 4.5s ease-in-out infinite var(--dl)}
+@keyframes glowCell{50%{background:linear-gradient(160deg,#18705a,#0d4636);color:#fff;box-shadow:0 0 18px rgba(247,201,72,.55)}}
+.cap{margin-top:34px}
+
+/* CTA band */
+.band{padding-block:28px;background:linear-gradient(110deg,#052e22,#0a4a36 55%,#0f6b4a);color:#fff}
+.band-in{display:grid;gap:18px;align-items:center}
+@media(min-width:820px){.band-in{grid-template-columns:1fr auto}}
+.band small{font-size:.74rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lime)}
+.band h2{font-size:clamp(1.4rem,4vw,2.2rem);font-weight:800}
+.band h2 span{color:var(--gold)}
+.band p{color:#cde9db}
+.band .act{display:grid;gap:12px;justify-items:center}
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;font-size:.8rem;color:#cde9db}
+.trust span{display:inline-flex;align-items:center;gap:6px}
+.trust .ico{width:1.2em;height:1.2em;color:var(--lime)}
+
+/* mentor */
+.mentor-grid{display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.mentor-grid{grid-template-columns:.8fr 1.2fr}}
+.mentor-grid .stage{width:min(100%,430px);aspect-ratio:.82}
+.mentor-grid .stage .chakra{width:120%;top:46%}
+.mentor-grid .stage .person{height:100%}
+.mentor-grid .glow{background:radial-gradient(circle,#0a4a36 0%,#073b2c 52%,rgba(7,59,44,0) 71%)}
+.mentor-name{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;color:var(--em900);margin:6px 0 2px}
+.mentor-role{font-family:var(--accent);font-style:italic;font-size:1.3rem;color:var(--blue)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:12px;margin-top:22px}
+.stat{padding:16px 12px;border-radius:18px;text-align:center;background:#fff;border:1px solid rgba(15,107,74,.14);box-shadow:0 8px 22px rgba(5,46,34,.07);font-size:.86rem;font-weight:500;line-height:1.4;transition:transform .4s var(--ease)}
+.stat:hover{transform:translateY(-6px)}
+.stat .ico{width:34px;height:34px;margin:0 auto 8px;color:var(--saffron)}
+.stat:nth-child(2) .ico{color:var(--blue)}.stat:nth-child(3) .ico{color:var(--green)}.stat:nth-child(4) .ico{color:var(--ruby)}
+
+/* testimonials */
+.quote{position:relative;padding:28px 24px 24px;border-radius:22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px);display:flex;flex-direction:column;gap:18px;transition:transform .45s var(--ease),border-color .4s}
+.quote:hover{transform:translateY(-8px);border-color:rgba(247,201,72,.7)}
+.quote::before{content:"“";position:absolute;top:2px;right:18px;font-family:var(--accent);font-size:5rem;line-height:1;color:rgba(247,201,72,.35)}
+.quote p{font-size:1rem;color:#e4f4eb}
+.quote .who{display:flex;align-items:center;gap:12px;margin-top:auto}
+.avatar{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;flex:none;color:#2a1300;background:linear-gradient(135deg,#ffd76a,#ff9f1c)}
+.avatar .ico{width:24px;height:24px}
+.quote:nth-child(2) .avatar{background:linear-gradient(135deg,#86efac,#22c55e)}
+.quote:nth-child(3) .avatar{background:linear-gradient(135deg,#93c5fd,#3b82f6)}
+.who b{display:block;font-size:.92rem}.who span{font-size:.8rem;color:#a9d6c0}
+.stars-r{color:var(--gold);letter-spacing:3px;font-size:.95rem}
+
+/* opportunity */
+.opp{text-align:center}
+.opp .icon-chip{margin-inline:auto}
+.opp h3{font-family:var(--body);font-size:1.1rem;font-weight:700;color:var(--em900);margin-bottom:6px}
+.opp p{color:var(--muted);font-size:.95rem}
+
+/* FAQ */
+.faq{max-width:860px;margin:36px auto 0;display:grid;gap:12px}
+.faq details{border-radius:18px;background:#fff;border:1px solid rgba(15,107,74,.14);box-shadow:0 6px 18px rgba(5,46,34,.05);overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.faq details[open]{border-color:rgba(67,185,62,.6);box-shadow:0 12px 30px rgba(67,185,62,.14)}
+.faq summary{list-style:none;display:flex;align-items:center;gap:14px;padding:16px 18px;cursor:pointer;font-weight:600;color:var(--em900)}
+.faq summary::-webkit-details-marker{display:none}
+.faq .n{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;flex:none;font-size:.85rem;font-weight:700;background:var(--paper);color:var(--em700)}
+.faq details[open] .n{background:linear-gradient(135deg,var(--green),var(--em700));color:#fff}
+.faq summary .ico{margin-left:auto;transition:transform .4s var(--ease)}
+.faq details[open] summary .ico{transform:rotate(180deg)}
+.faq .ans{padding:0 18px 18px 70px;color:var(--muted);font-size:.95rem}
+@media(max-width:520px){.faq .ans{padding-left:18px}}
+
+/* final CTA */
+.final .box{display:grid;gap:30px;align-items:center;padding:clamp(22px,4vw,44px);border-radius:30px;background:rgba(255,255,255,.06);border:1px solid rgba(247,201,72,.4);box-shadow:0 0 70px rgba(67,185,62,.2)}
+@media(min-width:900px){.final .box{grid-template-columns:1.15fr .85fr}}
+.final h2{font-size:clamp(1.6rem,4.6vw,2.8rem);font-weight:800;margin:14px 0}
+.final h2 span{display:block;color:var(--gold)}
+.final .pay{padding:22px;border-radius:24px;background:#fff;color:var(--text);display:grid;gap:16px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.final .pay .price{box-shadow:none}
+.final .pay .timer-box{margin:0;background:linear-gradient(180deg,#0b3427,#06221a)}
+.pay-note{font-size:.88rem;color:var(--muted)}
+.pay .trust{color:var(--muted)}.pay .trust .ico{color:var(--green)}
+.bgchakra{position:absolute;right:-140px;top:50%;width:560px;aspect-ratio:1;transform:translateY(-50%);opacity:.14;pointer-events:none}
+.bgchakra svg{width:100%;height:100%}
+
+/* trust / info / legal */
+.t-card{text-align:center}
+.t-card .icon-chip{margin-inline:auto}
+.t-card h3{font-family:var(--body);font-size:1.05rem;font-weight:700;color:var(--em900);margin-bottom:6px}
+.t-card p{color:var(--muted);font-size:.93rem}
+.info-card{display:flex;gap:16px;align-items:flex-start}
+.info-card .ico{width:38px;height:38px;color:var(--em700);padding:8px;border-radius:12px;background:var(--paper);box-sizing:content-box}
+.info-card h3{font-family:var(--body);font-size:1rem;font-weight:700;color:var(--em900)}
+.info-card p{font-size:.9rem;color:var(--muted)}
+.legal ul{margin-left:20px;display:grid;gap:6px}
+.legal li{font-size:.92rem;color:var(--muted)}
+
+/* footer */
+footer{background:#031812;color:#bfe0d0;padding-block:36px 100px}
+.foot{display:grid;gap:22px;align-items:center;text-align:center}
+@media(min-width:860px){.foot{grid-template-columns:auto 1fr auto;text-align:left}}
+.foot .brand{justify-self:center}
+.links{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;font-size:.88rem}
+@media(min-width:860px){.links{justify-content:flex-start}}
+.links a:hover{color:var(--gold)}
+.copy{font-size:.82rem;color:#7fa493;text-align:center;margin-top:6px}
+@media(min-width:860px){.copy{text-align:left}}
+.social{display:flex;gap:10px;justify-content:center}
+.social a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);transition:transform .35s var(--ease),background .35s}
+.social a:hover{transform:translateY(-4px) rotate(8deg);background:var(--green);color:#04201a}
+
+/* sticky CTA */
+#sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;transform:translateY(110%);transition:transform .6s var(--ease);padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));background:rgba(4,32,26,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:2px solid var(--gold)}
+#sticky.show{transform:none}
+.st-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.st-txt{min-width:0;color:#fff}
+.st-txt small{display:block;font-size:.66rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--lime)}
+.st-txt b{display:block;font-family:var(--display);font-size:clamp(.95rem,3.4vw,1.35rem);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st-txt b span{color:var(--gold)}
+.st-txt .sh{display:none}@media(max-width:520px){.st-txt .lg{display:none}.st-txt .sh{display:inline}}
+.st-txt .tm{display:none;font-size:.78rem;color:#cde9db}
+@media(min-width:760px){.st-txt .tm{display:block}.st-in .trust{display:flex}}
+.st-in .trust{display:none;color:#cde9db}
+@media(min-width:1000px){.st-in .trust{display:flex}}
+
+/* reveal + magic */
+.rv{opacity:0;transform:translateY(34px) scale(.98);filter:blur(6px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none;filter:none}
+.spark{position:fixed;z-index:90;pointer-events:none;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle,#fff,#ffd76a 60%,transparent 70%);opacity:0}
+.spark.go{animation:spk .9s ease-out forwards}
+@keyframes spk{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.2)}}
+
+/* small screens */
+@media(max-width:560px){
+  .brand img{height:38px}.nav{height:62px}.hero{padding-top:88px}
+  .facts{gap:8px}.fact{padding:10px;gap:9px}.fact .ico{width:22px;height:22px;padding:5px}
+  .fact span{font-size:.82rem}
+  .btn{padding:12px 18px;font-size:.92rem}.btn-lg{font-size:1rem}
+  .step .ico{display:none}
+  .name-tag b{font-size:.82rem}
+  .bgchakra{width:380px;right:-160px}
+}
+@media(max-width:360px){.btn-sm{padding:9px 12px;font-size:.8rem}.brand{padding:3px 10px}.brand img{height:34px}.timer b{font-size:1.35rem}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  .rv{opacity:1;transform:none;filter:none}html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-hour" viewBox="0 0 24 24"><path d="M5 22h14M5 2h14M17 22v-4.2a2 2 0 0 0-.6-1.4L12 12l-4.4 4.4A2 2 0 0 0 7 17.8V22M7 2v4.2a2 2 0 0 0 .6 1.4L12 12l4.4-4.4A2 2 0 0 0 17 6.2V2"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="i-video" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></symbol>
+<symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3 6.3-2.1Z"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.7V17c0 .6-.5 1-1 1.2C7.9 18.8 7 20.2 7 22M14 14.7V17c0 .6.5 1 1 1.2 1.1.6 2 2 2 3.8M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 6.9-1z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.6 0C7.500 20.500 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.500-1.200 6.200-2.700a1.200 1.200 0 0 1 1.500 0C14.500 3.800 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-yt" viewBox="0 0 24 24"><path d="M2.500 17a24 24 0 0 1 0-10 2 2 0 0 1 1.400-1.400 50 50 0 0 1 16.200 0A2 2 0 0 1 21.500 7a24 24 0 0 1 0 10 2 2 0 0 1-1.400 1.400 50 50 0 0 1-16.200 0A2 2 0 0 1 2.500 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.400A4 4 0 1 1 12.600 8 4 4 0 0 1 16 11.400zM17.500 6.500h.01"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+</svg>
+
+<!-- PRELOADER -->
+<div id="pre" role="status" aria-label="Loading Vedic Prakash">
+  <div class="pre-box">
+    <div class="pre-ring"></div><div class="pre-ring r2"></div>
+    <img src="img/logo.webp" width="420" height="286" alt="Vedic Prakash – Discover the path to Vedic enlightenment">
+    <div class="pre-bar"><i></i></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Vedic Prakash home"><img src="img/logo.webp" width="68" height="46" alt="Vedic Prakash"></a>
+    <a class="btn btn-enroll btn-sm js-book" href="#enroll">Book My ₹49 Demo <svg class="ico"><use href="#i-arrow"/></svg></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- 2. HERO -->
+<section class="hero" id="hero">
+  <div class="stars" data-stars="22" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy rv">
+      <span class="live-badge"><b></b>Live Demo Class</span>
+      <h1>Vedic Numerology Seekhiye: <em>Life Ke Important Moments Ki Timing</em> Samajhne Ka Live Demo</h1>
+      <p class="lead">Mulank, Bhagyank, Lo Shu Grid aur Dasha ko ek saath padhna seekhiye. 2–3 ghante ka live online demo, sirf <strong>₹49</strong>.</p>
+    </div>
+
+    <div class="hero-visual rv" style="--d:.15s">
+      <div class="stage" data-vis>
+        <div class="glow"></div>
+        <div class="chakra" data-chakra aria-hidden="true"></div>
+        <i class="orb" style="--x:8%;--y:30%;--s:12px"></i><i class="orb" style="--x:90%;--y:22%;--s:9px;--dl:1.5s"></i><i class="orb" style="--x:84%;--y:66%;--s:14px;--dl:3s"></i><i class="orb" style="--x:6%;--y:68%;--s:8px;--dl:2.2s"></i>
+        <img class="person" src="img/author-hero.webp" width="788" height="1100" alt="Sanjeev Tiwari, founder of Vedic Prakash" fetchpriority="high" decoding="async">
+        <div class="name-tag"><b>Sanjeev Tiwari</b><span>Vedic Prakash</span></div>
+      </div>
+    </div>
+
+    <div class="hero-info rv" style="--d:.1s">
+      <div class="facts">
+        <div class="fact"><svg class="ico"><use href="#i-calendar"/></svg><div><small>Date</small><span data-date>Loading…</span></div></div>
+        <div class="fact"><svg class="ico"><use href="#i-clock"/></svg><div><small>Time</small><span data-time>Loading…</span></div></div>
+        <div class="fact"><svg class="ico"><use href="#i-monitor"/></svg><div><small>Mode</small><span>Live Online Demo</span></div></div>
+        <div class="fact"><svg class="ico"><use href="#i-hour"/></svg><div><small>Duration</small><span>2–3 Hours (Approx.)</span></div></div>
+      </div>
+      <div class="timer-box">
+        <div class="timer-top"><span class="l">Live demo starts in</span><span class="r">Limited Seats</span></div>
+        <div class="timer" data-timer aria-live="off">
+          <div><b data-d>00</b><span>Days</span></div><div><b data-h>00</b><span>Hours</span></div><div><b data-m>00</b><span>Mins</span></div><div><b data-s>00</b><span>Secs</span></div>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price"><small>Live demo<br>fee only</small><strong>₹49</strong></div>
+        <a class="btn btn-enroll btn-lg js-book" href="#enroll">Book My ₹49 Demo <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. HOW TO JOIN -->
+<section class="tint" id="how">
+  <div class="wrap">
+    <div class="center rv"><span class="eyebrow">How to join</span><h2 class="sec-title">Join in <em>3 Simple Steps</em></h2></div>
+    <div class="steps mt">
+      <div class="step rv"><span class="n">1</span><div><h3>Book Your Demo</h3><p>Pay ₹49 securely</p></div><svg class="ico"><use href="#i-card"/></svg></div>
+      <div class="step rv" style="--d:.12s"><span class="n">2</span><div><h3>Get Confirmation</h3><p>Receive joining details on email/WhatsApp</p></div><svg class="ico"><use href="#i-mail"/></svg></div>
+      <div class="step rv" style="--d:.24s"><span class="n">3</span><div><h3>Join the Live Session</h3><p>Attend on Zoom at the scheduled time</p></div><svg class="ico"><use href="#i-video"/></svg></div>
+    </div>
+    <div class="note mt rv"><svg class="ico"><use href="#i-info"/></svg><span>Numerology is an interpretive practice; insights are not guarantees of future events or outcomes.</span></div>
+  </div>
+</section>
+
+<!-- 4. PROBLEM -->
+<section id="why">
+  <div class="wrap">
+    <div class="center rv"><span class="eyebrow">Why learn predictive numerology</span><h2 class="sec-title">Aapke Questions Sirf <em>“WHAT”</em> Tak Limited Hain?</h2><p class="sec-sub">Log aksar sirf life ke patterns nahi, balki important events ki timing bhi samajhna chahte hain.</p></div>
+    <div class="grid g2 mt">
+      <div class="card q c4 rv"><span class="icon-chip"><svg class="ico"><use href="#i-heart"/></svg></span><div><h3>Relationships</h3><p>“Meri shaadi kab hogi?”</p></div></div>
+      <div class="card q c2 rv" style="--d:.1s"><span class="icon-chip"><svg class="ico"><use href="#i-brief"/></svg></span><div><h3>Career</h3><p>“Mera career kab improve hoga?”</p></div></div>
+      <div class="card q rv" style="--d:.2s"><span class="icon-chip"><svg class="ico"><use href="#i-chart"/></svg></span><div><h3>Business</h3><p>“Business ke liye sahi time kya hai?”</p></div></div>
+      <div class="card q c3 rv" style="--d:.3s"><span class="icon-chip"><svg class="ico"><use href="#i-compass"/></svg></span><div><h3>Life Decisions</h3><p>“Aage kaunsa phase aa sakta hai?”</p></div></div>
+    </div>
+    <p class="punch rv">Understanding patterns is one thing. <span>Understanding timing is another.</span></p>
+  </div>
+</section>
+
+<!-- 5. WHAT YOU'LL LEARN -->
+<section class="dark" id="learn">
+  <div class="wrap learn-grid">
+    <div>
+      <div class="rv"><span class="eyebrow">What you’ll learn</span><h2 class="sec-title">Is Live Demo Mein Aap <em>Yeh Seekhenge</em></h2></div>
+      <div class="list">
+        <div class="li rv"><span class="n">01</span><div><h3>Apna Lo Shu aur Vedic Grid khud banayein</h3><p>Numbers ko sahi tarah se nikalna aur padhna seekhiye.</p></div></div>
+        <div class="li rv" style="--d:.1s"><span class="n">02</span><div><h3>Dasha dekhkar current life phase pehchaniye</h3><p>Samajhiye kaise Dasha life events ki timing se judi hoti hai.</p></div></div>
+        <div class="li rv" style="--d:.2s"><span class="n">03</span><div><h3>Ek real case study live padhiye</h3><p>Step-by-step analysis dekh kar practical samajh banaiye.</p></div></div>
+        <div class="li rv" style="--d:.3s"><span class="n">04</span><div><h3>Apne sawal mentor se seedha poochiye</h3><p>Live Q&amp;A mein apne personal questions poochiye.</p></div></div>
+      </div>
+    </div>
+    <div class="rv" style="--d:.2s">
+      <div class="loshu-wrap" data-vis>
+        <div class="glow"></div>
+        <div class="chakra" data-chakra aria-hidden="true"></div>
+        <div class="loshu" aria-label="Lo Shu Grid">
+          <b style="--dl:0s">4</b><b style="--dl:.5s">9</b><b style="--dl:1s">2</b>
+          <b style="--dl:3.5s">3</b><b style="--dl:1.5s">5</b><b style="--dl:1.5s">7</b>
+          <b style="--dl:3s">8</b><b style="--dl:2.5s">1</b><b style="--dl:2s">6</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap cap"><div class="note rv"><svg class="ico"><use href="#i-chart"/></svg><span><strong>Aage chal kar, apni learning aur experience ke basis par consultation practice explore kar sakte hain.</strong> Professional practice and earning potential depend on individual learning, practical experience, client demand, and other factors. No career or income outcome is guaranteed.</span></div></div>
+</section>
+
+<!-- CTA BAND -->
+<div class="band">
+  <div class="wrap band-in">
+    <div class="rv"><small>Vedic Numerology Live Demo</small><h2>Sirf <span>₹49</span> Mein Shuruaat Kijiye</h2><p>Life patterns ko samajhne ka ek naya perspective paaiye.</p></div>
+    <div class="act rv" style="--d:.1s">
+      <a class="btn btn-enroll js-book" href="#enroll">Book My ₹49 Demo <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <div class="trust"><span><svg class="ico"><use href="#i-shield"/></svg>Secure Payment</span><span><svg class="ico"><use href="#i-monitor"/></svg>Live on Zoom</span><span><svg class="ico"><use href="#i-users"/></svg>Interactive Session</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. MENTOR -->
+<section id="mentor">
+  <div class="wrap mentor-grid">
+    <div class="rv">
+      <div class="stage" data-vis>
+        <div class="glow"></div>
+        <div class="chakra" data-chakra aria-hidden="true"></div>
+        <img class="person" src="img/author-mentor.webp" width="587" height="1000" alt="Sanjeev Tiwari, mentor and author" loading="lazy" decoding="async">
+      </div>
+    </div>
+    <div>
+      <div class="rv"><span class="eyebrow">Meet your mentor</span>
+        <h2 class="mentor-name">Sanjeev Tiwari</h2>
+        <p class="mentor-role">Vedic Prakash</p>
+        <p class="sec-sub">Learn Predictive Vedic Numerology through a structured approach that combines Lo Shu Grid, Vedic Grid and Dasha with practical case studies.</p></div>
+      <div class="stats">
+        <div class="stat rv"><svg class="ico"><use href="#i-trophy"/></svg>Years of experience in Vedic Numerology</div>
+        <div class="stat rv" style="--d:.1s"><svg class="ico"><use href="#i-users"/></svg>Guided 1000+ learners (approx.)</div>
+        <div class="stat rv" style="--d:.2s"><svg class="ico"><use href="#i-book"/></svg>Author &amp; Speaker</div>
+        <div class="stat rv" style="--d:.3s"><svg class="ico"><use href="#i-star"/></svg>Known for a practical, step-by-step approach</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TESTIMONIALS -->
+<section class="dark" id="reviews">
+  <div class="wrap">
+    <div class="center rv"><span class="eyebrow">Student testimonials</span><h2 class="sec-title">Real Learners. <em>Real Feedback.</em></h2><p class="sec-sub">See how the demo has helped learners understand the methodology better.</p></div>
+    <div class="grid g3 mt">
+      <div class="quote rv"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“The session gave me a clear understanding of how numerology works and how timing is analysed.”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Professional</span></div></div></div>
+      <div class="quote rv" style="--d:.12s"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“Simple and easy explanation. The concepts were explained in a practical way.”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Business Owner</span></div></div></div>
+      <div class="quote rv" style="--d:.24s"><span class="stars-r" aria-hidden="true">★★★★★</span><p>“I now understand my strengths and current phase better. Looking forward to learning more.”</p><div class="who"><span class="avatar"><svg class="ico"><use href="#i-user"/></svg></span><div><b>Verified Student</b><span>Student</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PROFESSIONAL OPPORTUNITY -->
+<section class="tint" id="path">
+  <div class="wrap">
+    <div class="center rv"><span class="eyebrow">Professional opportunity</span><h2 class="sec-title">Turn Your Learning Into a <em>Potential Professional Path</em></h2><p class="sec-sub">With the right learning, consistent practice and experience, you can explore how this knowledge may be applied in a consultation-based practice or complement your existing skills.</p></div>
+    <div class="grid g3 mt">
+      <div class="card opp rv"><span class="icon-chip"><svg class="ico"><use href="#i-book"/></svg></span><h3>Learn a Specialised Skill</h3><p>Understand predictive numerology concepts, methods and applications.</p></div>
+      <div class="card opp c2 rv" style="--d:.12s"><span class="icon-chip"><svg class="ico"><use href="#i-chart"/></svg></span><h3>Develop Practical Understanding</h3><p>Work on case studies and develop your interpretation skills.</p></div>
+      <div class="card opp c3 rv" style="--d:.24s"><span class="icon-chip"><svg class="ico"><use href="#i-users"/></svg></span><h3>Explore Consultation Possibilities</h3><p>Once you have the knowledge and experience, you can explore offering numerology consultations.</p></div>
+    </div>
+    <div class="note mt rv"><svg class="ico"><use href="#i-chart"/></svg><span>Professional practice and earning potential depend on individual learning, practical experience, client demand, and other factors. No career or income outcome is guaranteed.</span></div>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center rv"><span class="eyebrow">Got questions?</span><h2 class="sec-title">Frequently <em>Asked Questions</em></h2></div>
+    <div class="faq">
+      <details open class="rv"><summary><span class="n">01</span>Who can attend this webinar?<svg class="ico"><use href="#i-chev"/></svg></summary><p class="ans">Anyone interested in learning Predictive Numerology, including beginners, students, working professionals and existing numerology or astrology practitioners.</p></details>
+      <details open class="rv"><summary><span class="n">02</span>Do I need prior numerology knowledge?<svg class="ico"><use href="#i-chev"/></svg></summary><p class="ans">No. This is an introductory demo. Concepts will be explained clearly so that both beginners and those with some prior knowledge can benefit.</p></details>
+      <details open class="rv"><summary><span class="n">03</span>What is included in the ₹49 fee?<svg class="ico"><use href="#i-chev"/></svg></summary><p class="ans">Access to the live online demo (2–3 hours), a practical case study, live Q&amp;A with the mentor and an introduction to the methodology.</p></details>
+      <details open class="rv"><summary><span class="n">04</span>Will I get a recording?<svg class="ico"><use href="#i-chev"/></svg></summary><p class="ans">A recording may be available for a limited period. This will be confirmed before or after the session.</p></details>
+      <details open class="rv"><summary><span class="n">05</span>Is this the complete course?<svg class="ico"><use href="#i-chev"/></svg></summary><p class="ans">No. This is a live demo session. The complete Predictive Vedic Numerology programme is a separate structured course with a detailed syllabus and fee.</p></details>
+      <details open class="rv"><summary><span class="n">06</span>How do I join the webinar?<svg class="ico"><use href="#i-chev"/></svg></summary><p class="ans">After payment, you will receive a confirmation email/WhatsApp with the Zoom joining link and all the session details.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FINAL CTA -->
+<section class="dark final" id="enroll">
+  <div class="bgchakra" data-chakra aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="box rv">
+      <div>
+        <span class="live-badge"><b></b>Vedic Numerology Live Demo</span>
+        <h2>Sirf “Kya Hoga?” Nahi. <span>“Kab Ho Sakta Hai?” Bhi Samajhiye.</span></h2>
+        <p class="lead">Learn how numbers and timing can give a new perspective to your important life events.</p>
+        <div class="facts" style="margin-bottom:0">
+          <div class="fact"><svg class="ico"><use href="#i-calendar"/></svg><div><small>Date</small><span data-date>Loading…</span></div></div>
+          <div class="fact"><svg class="ico"><use href="#i-clock"/></svg><div><small>Time</small><span data-time>Loading…</span></div></div>
+        </div>
+      </div>
+      <div class="pay">
+        <div class="timer-box"><div class="timer-top"><span class="l">Hurry! Starts in</span><span class="r">Limited Seats</span></div>
+          <div class="timer" data-timer><div><b data-d>00</b><span>Days</span></div><div><b data-h>00</b><span>Hours</span></div><div><b data-m>00</b><span>Mins</span></div><div><b data-s>00</b><span>Secs</span></div></div></div>
+        <div class="price"><small>Live demo<br>fee only</small><strong>₹49</strong></div>
+        <p class="pay-note">Live Online Demo (2–3 Hours)</p>
+        <a class="btn btn-enroll btn-lg js-book" href="#enroll">Book My ₹49 Demo <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <div class="trust"><span><svg class="ico"><use href="#i-shield"/></svg>Secure Payment</span><span><svg class="ico"><use href="#i-monitor"/></svg>Live on Zoom</span><span><svg class="ico"><use href="#i-bolt"/></svg>Interactive Session</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. TRUST -->
+<section class="tint" id="trust">
+  <div class="wrap">
+    <div class="center rv"><span class="eyebrow">Why learn with Vedic Prakash</span><h2 class="sec-title">A Trusted Approach to <em>Predictive Vedic Numerology</em></h2><p class="sec-sub">A structured methodology, practical learning and real-world application.</p></div>
+    <div class="grid g4 mt">
+      <div class="card t-card rv"><span class="icon-chip"><svg class="ico"><use href="#i-book"/></svg></span><h3>Structured Methodology</h3><p>Combines Lo Shu Grid, Vedic Grid and Dasha.</p></div>
+      <div class="card t-card c2 rv" style="--d:.1s"><span class="icon-chip"><svg class="ico"><use href="#i-user"/></svg></span><h3>Learn from an Experienced Mentor</h3><p>Years of experience in Vedic Numerology.</p></div>
+      <div class="card t-card c3 rv" style="--d:.2s"><span class="icon-chip"><svg class="ico"><use href="#i-file"/></svg></span><h3>Practical Case Studies</h3><p>Real examples for better understanding.</p></div>
+      <div class="card t-card c4 rv" style="--d:.3s"><span class="icon-chip"><svg class="ico"><use href="#i-users"/></svg></span><h3>Supportive Learning Environment</h3><p>Live Q&amp;A and doubt clarification.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. IMPORTANT INFO + 13. LEGAL -->
+<section id="info" style="padding-bottom:clamp(36px,5vw,56px)">
+  <div class="wrap">
+    <div class="center rv"><span class="eyebrow">Important information</span><h2 class="sec-title">Good to <em>Know</em></h2></div>
+    <div class="grid g3 mt">
+      <div class="card info-card rv"><svg class="ico"><use href="#i-laptop"/></svg><div><h3>Live on Zoom</h3><p>Attend from your laptop or mobile.</p></div></div>
+      <div class="card info-card rv" style="--d:.1s"><svg class="ico"><use href="#i-play"/></svg><div><h3>Recording (Limited Period)</h3><p>A recording may be made available for a limited period. Details will be shared after the session.</p></div></div>
+      <div class="card info-card rv" style="--d:.2s"><svg class="ico"><use href="#i-file"/></svg><div><h3>This is a Demo</h3><p>This is an introductory live session. The complete Predictive Vedic Numerology programme is a separate structured course with a detailed syllabus and fee.</p></div></div>
+    </div>
+    <div class="note legal mt rv"><svg class="ico"><use href="#i-info"/></svg><div><strong style="color:var(--em900)">Legal &amp; Disclaimer</strong>
+      <ul><li>Numerology is an interpretive practice; insights are not guarantees of future events or outcomes.</li><li>Professional practice and earning potential depend on individual learning, practical experience, client demand, and other factors.</li><li>This demo and the complete course are for educational and self-awareness purposes only.</li></ul></div></div>
+  </div>
+</section>
+</main>
+
+<!-- 14. FOOTER -->
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top" aria-label="Vedic Prakash"><img src="img/logo.webp" width="68" height="46" alt="Vedic Prakash" loading="lazy"></a>
+    <div><nav class="links" aria-label="Footer"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a><a href="#">Refund/Cancellation Policy</a><a href="#">Contact</a></nav><p class="copy">© 2026 Vedic Prakash. All rights reserved.</p></div>
+    <div class="social"><a href="#" aria-label="YouTube"><svg class="ico"><use href="#i-yt"/></svg></a><a href="#" aria-label="Instagram"><svg class="ico"><use href="#i-ig"/></svg></a><a href="#" aria-label="Facebook"><svg class="ico"><use href="#i-fb"/></svg></a></div>
+  </div>
+</footer>
+
+<!-- 15. STICKY CTA -->
+<div id="sticky" aria-hidden="true">
+  <div class="st-in">
+    <div class="st-txt"><small>Vedic Numerology Live Demo</small><b><span class="lg">Sirf <span>₹49</span> Mein Shuruaat Kijiye</span><span class="sh">Live Demo · Only <span>₹49</span></span></b><span class="tm">Life patterns ko samajhne ka ek naya perspective paaiye.</span></div>
+    <div class="trust"><span><svg class="ico"><use href="#i-shield"/></svg>Secure Payment</span><span><svg class="ico"><use href="#i-monitor"/></svg>Live on Zoom</span></div>
+    <a class="btn btn-enroll btn-sm js-book" href="#enroll" tabindex="-1">Book My ₹49 Demo <svg class="ico"><use href="#i-arrow"/></svg></a>
+  </div>
+</div>
+
+<script>
+/* ================== EDIT HERE ================== */
+const CONFIG = {
+  // Demo start, India time, ISO format with +05:30. Leave "" to auto-pick the next Saturday, 7:00 PM IST.
+  demoDate: "",
+  // Payment / booking link. Leave "#enroll" until you have your payment page URL.
+  bookUrl: "#enroll"
+};
+/* =============================================== */
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---- booking links ---- */
+if(CONFIG.bookUrl && CONFIG.bookUrl!=="#enroll"){ $$(".js-book").forEach(function(a){a.href=CONFIG.bookUrl;a.target="_blank";a.rel="noopener"}); }
+
+/* ---- chakra (zodiac wheel) built once, cloned everywhere ---- */
+function chakraSVG(){
+  var P=Math.PI/180, s='<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="presentation"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a0"/><stop offset="1" stop-color="#f5a623"/></linearGradient></defs><g transform="translate(200 200)">';
+  s+='<g class="g rays">';
+  for(var i=0;i<24;i++){var a=i*15*P,l=i%2?176:196,w=5.5,r0=150;
+    var x1=Math.cos(a-w*P/5)*r0,y1=Math.sin(a-w*P/5)*r0,x2=Math.cos(a+w*P/5)*r0,y2=Math.sin(a+w*P/5)*r0;
+    s+='<path d="M'+x1.toFixed(1)+' '+y1.toFixed(1)+'L'+(Math.cos(a)*l).toFixed(1)+' '+(Math.sin(a)*l).toFixed(1)+'L'+x2.toFixed(1)+' '+y2.toFixed(1)+'Z" fill="'+(i%2?'#43b93e':'url(#gg)')+'" opacity="'+(i%2?.8:.95)+'"/>';}
+  s+='</g><g class="g ring" fill="none" stroke-linecap="round"><circle r="148" stroke="#43b93e" stroke-width="2.5"/><circle r="140" stroke="#ffd76a" stroke-width="1" opacity=".8"/><circle r="100" stroke="#ffd76a" stroke-width="1.5"/>';
+  var gl=["♈","♉","♊","♋","♌","♍","♎","♏","♐","♑","♒","♓"];
+  for(var k=0;k<12;k++){var b=k*30,m=b+15;
+    s+='<line x1="'+(Math.cos(b*P)*100).toFixed(1)+'" y1="'+(Math.sin(b*P)*100).toFixed(1)+'" x2="'+(Math.cos(b*P)*140).toFixed(1)+'" y2="'+(Math.sin(b*P)*140).toFixed(1)+'" stroke="#ffd76a" stroke-width="1.2"/>';
+    s+='<text x="0" y="0" transform="rotate('+(m+90)+') translate(0 -120)" text-anchor="middle" dominant-baseline="central" fill="#ffe9a0" stroke="none" font-size="22" font-family="\'Segoe UI Symbol\',\'Noto Sans Symbols\',\'Noto Sans Symbols 2\',\'Apple Symbols\',DejaVu Sans,sans-serif">'+gl[k]+'︎</text>';}
+  s+='</g><g class="g core" fill="none" stroke="#b6ec6a" stroke-width="1.4"><circle r="92" stroke-dasharray="3 7" stroke="#ffd76a"/><rect x="-52" y="-52" width="104" height="104"/><rect x="-52" y="-52" width="104" height="104" transform="rotate(45)"/><circle r="52" stroke="#2e7bc0" stroke-width="2"/><circle r="30" stroke="#ffd76a"/><circle r="9" fill="#ffd76a" stroke="none"/></g></g></svg>';
+  return s;
+}
+var svg=chakraSVG(); $$("[data-chakra]").forEach(function(el){el.innerHTML=svg});
+
+/* pause off-screen animations */
+if("IntersectionObserver" in window){
+  var vo=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle("paused",!e.isIntersecting)})},{rootMargin:"80px"});
+  $$("[data-vis]").forEach(function(el){vo.observe(el)});
+  var bg=$(".bgchakra"); if(bg){bg.classList.add("paused");new IntersectionObserver(function(es){es.forEach(function(e){bg.classList.toggle("paused",!e.isIntersecting)})}).observe(bg);}
+}
+/* bg chakra inner groups need the class on the container for pause */
+$$(".bgchakra .g").forEach(function(g){g.style.animationPlayState="inherit"});
+
+/* ---- twinkling stars ---- */
+$$("[data-stars]").forEach(function(box){
+  var n=+box.dataset.stars,f=document.createDocumentFragment();
+  for(var i=0;i<n;i++){var s=document.createElement("i");s.style.left=(Math.random()*100)+"%";s.style.top=(Math.random()*100)+"%";s.style.setProperty("--t",(4+Math.random()*5).toFixed(1)+"s");s.style.setProperty("--dl",(Math.random()*5).toFixed(1)+"s");f.appendChild(s);}
+  box.appendChild(f);
+});
+
+/* ---- scroll reveal ---- */
+var rv=$$(".rv");
+if("IntersectionObserver" in window && !reduce){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+  rv.forEach(function(el){io.observe(el)});
+}else{rv.forEach(function(el){el.classList.add("in")})}
+
+/* ---- countdown ---- */
+function nextSaturday(){
+  var ist=new Date(Date.now()+5.5*3600e3); // shifted clock: read with getUTC*
+  var add=(6-ist.getUTCDay()+7)%7;
+  var y=ist.getUTCFullYear(),mo=ist.getUTCMonth(),d=ist.getUTCDate()+add;
+  var t=Date.UTC(y,mo,d,19,0,0)-5.5*3600e3;
+  if(t<=Date.now()) t+=7*864e5;
+  return new Date(t);
+}
+var target=CONFIG.demoDate?new Date(CONFIG.demoDate):nextSaturday();
+if(isNaN(target)) target=nextSaturday();
+if(target.getTime()<=Date.now() && !CONFIG.demoDate) target=nextSaturday();
+var dFmt=new Intl.DateTimeFormat("en-IN",{weekday:"short",day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kolkata"});
+var tFmt=new Intl.DateTimeFormat("en-IN",{hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Kolkata"});
+$$("[data-date]").forEach(function(e){e.textContent=dFmt.format(target)});
+$$("[data-time]").forEach(function(e){e.textContent=tFmt.format(target).toUpperCase()+" IST"});
+var timers=$$("[data-timer]").map(function(t){return {d:$("[data-d]",t),h:$("[data-h]",t),m:$("[data-m]",t),s:$("[data-s]",t),last:{}}});
+function pad(n){return n<10?"0"+n:""+n}
+function set(t,k,v){if(t.last[k]!==v){t.last[k]=v;var el=t[k];el.textContent=v;if(!reduce){el.classList.remove("tick");void el.offsetWidth;el.classList.add("tick")}}}
+function tickTimer(){
+  var ms=Math.max(0,target-Date.now()),s=Math.floor(ms/1000);
+  var v={d:pad(Math.floor(s/86400)),h:pad(Math.floor(s%86400/3600)),m:pad(Math.floor(s%3600/60)),s:pad(s%60)};
+  timers.forEach(function(t){for(var k in v)set(t,k,v[k])});
+}
+tickTimer(); setInterval(function(){if(!document.hidden)tickTimer()},1000);
+
+/* ---- header + sticky CTA ---- */
+var hdr=$("#hdr"),st=$("#sticky"),hero=$("#hero"),fin=$("#enroll"),finIn=false,heroOut=false;
+function stick(){var show=heroOut&&!finIn;st.classList.toggle("show",show);st.setAttribute("aria-hidden",show?"false":"true");$$("a",st).forEach(function(a){a.tabIndex=show?0:-1})}
+window.addEventListener("scroll",function(){hdr.classList.toggle("solid",window.scrollY>30)},{passive:true});
+if("IntersectionObserver" in window){
+  new IntersectionObserver(function(es){heroOut=!es[0].isIntersecting&&es[0].boundingClientRect.top<0;stick()},{threshold:0}).observe(hero);
+  new IntersectionObserver(function(es){finIn=es[0].isIntersecting;stick()},{threshold:.25}).observe(fin);
+}
+
+/* ---- magic cursor sparkles (fine pointers only) ---- */
+if(!reduce && window.matchMedia("(pointer:fine)").matches){
+  var pool=[],pi=0,lt=0;
+  for(var i=0;i<14;i++){var sp=document.createElement("i");sp.className="spark";document.body.appendChild(sp);pool.push(sp)}
+  window.addEventListener("pointermove",function(e){
+    var n=performance.now();if(n-lt<55)return;lt=n;
+    var sp=pool[pi++%pool.length];sp.classList.remove("go");void sp.offsetWidth;
+    sp.style.left=e.clientX+"px";sp.style.top=e.clientY+"px";
+    sp.style.setProperty("--dx",(Math.random()*40-20)+"px");sp.style.setProperty("--dy",(Math.random()*40+6)+"px");
+    sp.classList.add("go");
+  },{passive:true});
+}
+
+/* ---- preloader ---- */
+var pre=$("#pre"),t0=performance.now(),closed=false;
+function closePre(){if(closed)return;closed=true;var w=Math.max(0,1700-(performance.now()-t0));setTimeout(function(){pre.classList.add("done");document.body.classList.add("ready");setTimeout(function(){pre.remove()},1000)},w)}
+if(document.readyState==="complete")closePre();else window.addEventListener("load",closePre);
+setTimeout(closePre,4500);
+})();
+</script>
+</body>
+</html>
